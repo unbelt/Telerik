@@ -1,0 +1,5 @@
+.NET Framework is a software framework that runs primarily on Microsoft Windows.
+It includes a large library and provides language interoperability
+(each language can use code written in other languages) across several programming languages.
+C# is just a program language (like Java, PHP, ect.).
+Microsoft's implementation of C# is heavily integrated with the .NET Framework.
