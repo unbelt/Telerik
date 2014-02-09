@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<title>HTML Table Form</title>
+</head>
+
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+    </ul>
+  </nav>
+</header>
+<section>
+  <header>
+    <h2><a href="http://www.w3schools.com/html/html_tables.asp"
+        target="_blank"><strong>HTML5 Table</strong></a> Form</h2>
+  </header>
+  <form>
+    <table id="grid">
+      
+      <!-- Table HEADER -->
+      <thead>
+        <tr class="head_one">
+          <th colspan="6"> Drag a column header and drop it here to group by that colum </th>
+        </tr>
+        <tr class="head_two">
+          <th>ProductID</th>
+          <th>Product name</th>
+          <th>Unit price</th>
+          <th>Quantity per unit</th>
+          <th>Units in stock</th>
+          <th>Discontinued</th>
+        </tr>
+        <tr class="head_three">
+          <td><input type="text" class="small_input" size="5" /></td>
+          <td><input type="text" class="normal_input" /></td>
+          <td><input type="text" class="medium_input" size="8" />
+            <input type="image" src="img/filter.png" alt="Filter" /></td>
+          <td><input type="text" class="medium_input" size="11" /></td>
+          <td><input type="text" class="medium_input" size="10" />
+            <input type="image" src="img/filter.png" alt="Filter" /></td>
+          <td><input type="checkbox" />
+            <input type="image" src="img/filter.png" alt="Filter" /></td>
+        </tr>
+      </thead>
+      
+      <!-- Table FOOTER -->
+      <tfoot>
+        <tr>
+          <td colspan="2"><input type="image" src="img/home.png" alt="Filter" />
+            <input type="image" src="img/prev.png" alt="Filter" />
+            <a href="#" class="active">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">5</a> <a href="#">6</a> <a href="#">7</a> <a href="#">8</a> <a href="#">9</a> <a href="#">10</a> ...
+            <input type="image" src="img/next.png" alt="Filter" />
+            <input type="image" src="img/end.png" alt="Filter" /></td>
+          <td> Page size:
+            <select>
+              <option value="10">10</option>
+              <option value="20">20</option>
+              <option value="50">50</option>
+            </select></td>
+          <td colspan="3" class="total_pages"> 335104 items in 33511 pages </td>
+        </tr>
+      </tfoot>
+      
+      <!-- Table BODY -->
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Chai</td>
+          <td>$18.00</td>
+          <td>10 boxes x 20 bags</td>
+          <td>39</td>
+          <td><input type="checkbox" disabled="disabled" /></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Chang</td>
+          <td>$19.00</td>
+          <td>24 - 12 oz bottles</td>
+          <td>17</td>
+          <td><input type="checkbox" disabled="disabled" /></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Aniseed Syrup</td>
+          <td>$10.00</td>
+          <td>12 - 550 ml bottles</td>
+          <td>13</td>
+          <td><input type="checkbox" disabled="disabled" /></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>Chef Anton's Cajun Seasoning</td>
+          <td>$22.00</td>
+          <td>48 - 6 oz jars</td>
+          <td>53</td>
+          <td><input type="checkbox" disabled="disabled" /></td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>Chef Anton's Gumbo Mix</td>
+          <td>$21.35</td>
+          <td>36 boxes</td>
+          <td>0</td>
+          <td><input type="checkbox" disabled checked /></td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>Grandma's Boysenberry Spread</td>
+          <td>$25.00</td>
+          <td>12 - 8 oz jars</td>
+          <td>53</td>
+          <td><input type="checkbox" disabled /></td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>Uncle Bob's Organic Dried Pears</td>
+          <td>$30.00</td>
+          <td>12 - 1 lb pkgs.</td>
+          <td>15</td>
+          <td><input type="checkbox" disabled /></td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>Northwoods Cranberry Sauce</td>
+          <td>$40.00</td>
+          <td>12 - 12 oz jars</td>
+          <td>6</td>
+          <td><input type="checkbox" disabled /></td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>Mishi Kobe Niku</td>
+          <td>$97.00</td>
+          <td>18 - 500 g pkgs.</td>
+          <td>29</td>
+          <td><input type="checkbox" disabled checked /></td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>Ikura</td>
+          <td>$31.00</td>
+          <td>12 - 200 ml jars</td>
+          <td>31</td>
+          <td><input type="checkbox" disabled /></td>
+        </tr>
+      </tbody>
+    </table>
+  </form>
+</section>
+<footer>
+  <p>&copy; 2014 Flyer. No rights reserved.</p>
+</footer>
+</body>
+</html>
