@@ -1,0 +1,69 @@
+﻿<Window x:Class="RentalSystemUserInterface.NewCustomer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        xmlns:Rental="clr-namespace:RentalSystem.Models;assembly=RentalSystem.Models"
+        Title="NewCustomer" Height="210" Width="710">
+    <Window.Resources>
+        <ObjectDataProvider x:Key="CustomerType" MethodName="GetValues" ObjectType="{x:Type System:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="Rental:CustomerType"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </Window.Resources>
+
+
+    <Canvas Name="Root" Margin="0,0,2,0">
+        <StackPanel Height="24" Orientation="Horizontal" Canvas.Left="10" Canvas.Top="10">
+            <TextBlock Name="TxtName" Text="Name:" TextAlignment="Right" Margin="0,2,5,0"  Width="40"/>
+            <TextBox Name="CustomerName" Width="300" TextChanged="NameTextChanged"/>
+        </StackPanel>
+        <StackPanel Height="24" Orientation="Horizontal" Canvas.Left="360" Canvas.Top="10">
+            <TextBlock Name="TxtEGN" Text="EGN:" TextAlignment="Right" Margin="0,2,5,0" Width="30"/>
+            <TextBox Name="EGN" Width="100" TextChanged="EGNTextChanged"/>
+        </StackPanel>
+        <StackPanel Height="24" Orientation="Horizontal" Canvas.Left="500" Canvas.Top="10">
+            <TextBlock Text="Phone:" TextAlignment="Right" Margin="0,2,5,0" Width="40"/>
+            <TextBox Name="Phone" Width="100" TextChanged="PhoneTextChanged"/>
+        </StackPanel>
+        <StackPanel Height="24" Orientation="Horizontal" Canvas.Left="10" Canvas.Top="55">
+            <TextBlock Text="City:"  TextAlignment="Right" Margin="0,2,5,0" Width="40"/>
+            <TextBox Name="City" Width="100" TextChanged="CityTextChanged"/>
+        </StackPanel>
+        <StackPanel Height="24" Orientation="Horizontal" Canvas.Left="160" Canvas.Top="55">
+            <TextBlock Text="Address:"  TextAlignment="Right" Margin="0,2,5,0" Width="50"/>
+            <TextBox Name="Address" Width="340" TextChanged="AddressTextChanged"/>
+        </StackPanel>
+        <GroupBox Name="PersonalDataGroup" BorderThickness="0" Canvas.Left="5" Canvas.Top="101" Width="325" Height="60">
+            <WrapPanel Name="PersonData" Orientation="Horizontal" >
+                <StackPanel Height="24" Orientation="Horizontal" Canvas.Left="0" Canvas.Top="10">
+                    <TextBlock Text="P.C.N.:"  TextAlignment="Right" Margin="0,2,5,0" Width="40"/>
+                    <TextBox Name="PCN" Width="100"/>
+                </StackPanel>
+                <StackPanel Height="24" Orientation="Horizontal" Canvas.Left="160" Canvas.Top="10">
+                    <TextBlock Text="Issued:"  TextAlignment="Right" Margin="5,2,10,0" Width="40"/>
+                    <DatePicker Name="PCNDate" Canvas.Left="215" Canvas.Top="69" Width="110" SelectedDate="01.01.01"/>
+                </StackPanel>
+                <StackPanel Margin="0,5" Height="24" Orientation="Horizontal" Canvas.Left="10" Canvas.Top="100">
+                    <TextBlock Text="Drv.Lic.:"  TextAlignment="Right" Margin="0,2,5,0" Width="40"/>
+                    <TextBox Name="DL" Width="100"/>
+                </StackPanel>
+                <StackPanel Height="24" Orientation="Horizontal" Canvas.Left="160" Canvas.Top="100">
+                    <TextBlock Text="Issued:"  TextAlignment="Right" Margin="5,2,10,0" Width="40"/>
+                    <DatePicker Name="DLDate" Canvas.Left="215" Canvas.Top="98" Width="110" SelectedDate="01.01.01"/>
+                </StackPanel>
+            </WrapPanel>
+        </GroupBox>
+        <TextBlock Text="Customer description:" Width="120" Height="22" Canvas.Top="80" Canvas.Left="330"/>
+        <TextBox Name ="Comment" AcceptsReturn="True" Height="55" Canvas.Left="330" Canvas.Top="99" Width="225"/>
+        <Button Name="SaveButton" Content="Save" Width="55" Canvas.Left="560" Canvas.Top="134" Click="SaveButton_Click"/>
+        <Button Name="CancelButton" Content="Cancel" Width="55" Canvas.Left="625" Canvas.Top="134" Click="CancelButton_Click"/>
+        <CheckBox Name ="Firm" Content="Firm" Canvas.Left="560" Canvas.Top="114" Unchecked="ClientIsPerson" Checked="ClientIsFirm"/>
+        <ComboBox Name ="CustAttr"
+                  ItemsSource="{Binding Source={StaticResource CustomerType}}"
+                  Canvas.Left="560" 
+                  Canvas.Top="57" 
+                  Width="120"/>
+        <TextBlock Text="Customer type:" Width="120" Height="22" Canvas.Top="39" Canvas.Left="560"/>
+    </Canvas>
+</Window>

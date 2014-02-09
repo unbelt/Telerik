@@ -1,0 +1,16 @@
+﻿<Window x:Class="RentalSystemUserInterface.EditDealersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Edit Dealers" Height="140" Width="290">
+    <Canvas Name="Root">
+        <TextBlock Text="Dealer:" TextAlignment="Right" Canvas.Left="10" Canvas.Top="12" Width="40"/>
+        <ComboBox Name ="NameCombo" Canvas.Left="55" Canvas.Top="15" Width="150" SelectionChanged="NameCombo_SelectionChanged"/>
+        <TextBlock Text="First name:" TextAlignment="Right" Canvas.Left="10" Canvas.Top="42" Width="66"/>
+        <TextBox Name="FirstNameBox"  Canvas.Left="81" Canvas.Top="40" Width="90"/>
+        <TextBlock Text="Last Name:" TextAlignment="Right" Canvas.Left="10" Canvas.Top="69" Width="66"/>
+        <TextBox Name="LastNameBox"  Canvas.Left="81" Canvas.Top="69" Width="90"/>
+        <Button Content="Add" Canvas.Left="220" Canvas.Top="42" Width="40" Click="AddButton_Click"/>
+        <Button Content="Delete" Canvas.Left="220" Canvas.Top="10" Width="40" Click="DelButton_Click"/>
+        <Button Content="Cancel" Width="40" Canvas.Left="220" Canvas.Top="69" Click="CancelButton_Click"/>
+    </Canvas>
+</Window>

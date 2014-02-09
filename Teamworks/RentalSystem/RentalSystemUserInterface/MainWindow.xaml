@@ -1,0 +1,280 @@
+﻿<Window x:Class="RentalSystemUserInterface.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Rental System" Height="510" Width="640" Closing="Window_Closing">
+    <Canvas>
+        <TextBlock 
+            FontSize="16" 
+            Text="Contract No" 
+            Canvas.Left="10" 
+            Canvas.Top="17" 
+            Width="90"/>
+        <TextBox 
+            Name="TextBoxContractNo"
+            Canvas.Left="100" 
+            Canvas.Top="17" 
+            Height="23" 
+            Width="120"/>
+        <TextBlock 
+            FontSize="16" 
+            Text="Date" 
+            Canvas.Left="225" 
+            Canvas.Top="17" 
+            Width="37"/>
+        <TextBox 
+            Name="TextBoxDate"
+            Canvas.Left="260" 
+            Canvas.Top="17" 
+            Height="23" 
+            Width="120"/>
+        <TextBox 
+            Name="TextBoxTime"
+            Canvas.Left="390" 
+            Canvas.Top="17" 
+            Height="23" 
+            Width="55"/>
+        <TextBlock 
+            Canvas.Left="450" 
+            Text="Dealer" 
+            Canvas.Top="21"/>
+        <ComboBox Name="ComboBoxDealer"
+            DisplayMemberPath="Name"
+            Canvas.Top="17" 
+            Canvas.Left="489" 
+            Width="120"/>
+        <Frame Content="Customer" 
+            BorderThickness="1" 
+            BorderBrush="Black" 
+            Height="196" 
+            Width="599" 
+            Canvas.Top="45" 
+            Canvas.Left="10"/>
+        <ComboBox Name="ComboBoxCustomer"
+            DisplayMemberPath="Name"
+            Canvas.Left="57" 
+            Canvas.Top="65" 
+            Width="258" 
+            SelectionChanged="ComboBoxCustomer_SelectionChanged">
+        </ComboBox>
+        <TextBlock 
+            Text="Name" 
+            Canvas.Left="14" 
+            Canvas.Top="72"/>
+        <TextBlock Name="TxtEGN"
+            Text="EGN" 
+            Canvas.Left="325" 
+            Canvas.Top="72"/>
+        <TextBox Name="EGN"
+            TextChanged="EGN_TextChanged"
+            Canvas.Left="353" 
+            Canvas.Top="65" 
+            Height="23" 
+            Width="97"/>
+        <TextBlock 
+            Text="Phone" 
+            Canvas.Left="455" 
+            Canvas.Top="72"/>
+        <TextBox Name="Phone"
+            Canvas.Left="494" 
+            Canvas.Top="65" 
+            Height="23" 
+            Width="101"/>
+        <TextBlock 
+            Text="City" 
+            Canvas.Left="14" 
+            Canvas.Top="97"/>
+        <TextBox Name="City"
+            Canvas.Left="57" 
+            Canvas.Top="93" 
+            Height="23" 
+            Width="115"/>
+        <TextBlock 
+            Text="Address" 
+            Canvas.Left="180" 
+            Canvas.Top="97"/>
+        <TextBox Name="Address"
+            Canvas.Left="230" 
+            Canvas.Top="93" 
+            Height="23" 
+            Width="365"/>
+        <GroupBox Name="PersonalDataGroup" Canvas.Left="8" Canvas.Top="120" Width="170"  BorderThickness="0" >
+            <WrapPanel>
+                <TextBlock Text="P.C.N." Margin="0,5,10,5"/>
+                <TextBox Name="PCN"
+                    Margin="0,5,0,5"
+                    Height="23" 
+                    Width="115"/>
+                <TextBlock Text="Issued" Margin="0,0,7,5"/>
+                <DatePicker Name="PCNDate" 
+                    Width="115"/>
+                <TextBlock Text="Drv.Lic." Margin="0,5,2,5"/>
+                <TextBox Name="DL"
+                    Margin="0,5,0,5"
+                    Height="23" 
+                    Width="115"/>
+                <TextBlock Text="Issued" Margin="0,0,7,5"/>
+                <DatePicker Name="DLDate" 
+                    Width="115"/>
+            </WrapPanel>
+        </GroupBox>
+        <TextBox Name="Comment"
+            AcceptsReturn="True" 
+            TextWrapping="Wrap" 
+            Canvas.Left="180" 
+            Canvas.Top="121" 
+            Height="108" 
+            Width="300"/>
+        <Button Name="NewClientButton" 
+            Content="New client" 
+            Canvas.Left="494" 
+            Canvas.Top="144" 
+            Width="101" 
+            Height="25" 
+            Click="NewClientButtonClick"/>
+        <Button Name="EditClient" 
+            Content="Edit Client" 
+            Canvas.Left="494" 
+            Canvas.Top="174" 
+            Width="101" 
+            Height="25"
+            IsEnabled="False"
+            Click="EditClientButtonClick"/>
+
+        <Frame Content="Machines"
+            BorderThickness="1" 
+            BorderBrush="Black" 
+            Height="180" 
+            Width="230" 
+            Canvas.Top="250" 
+            Canvas.Left="10">
+        </Frame>
+
+        <ListBox Name="ToolsGrid" Height="150" Canvas.Left="15" Canvas.Top="270" Width="220">
+            <StackPanel Orientation="Horizontal">
+                <ComboBox  Name="MachineName"
+                    Width="110"
+                    DisplayMemberPath="Name"
+                    SelectionChanged="ComboMachines_SelectionChanged"/>
+                <ComboBox Name="MachineNumber"
+                    Margin="5,0,5,0"
+                    Width="40"
+                    DisplayMemberPath="MachineNumber"
+                    SelectionChanged="ComboMachNum_SelectionChanged"/>
+                <Button Name="AddMachine" 
+                    Width="40"
+        	        Content="Add" 
+                    IsEnabled="False"
+        	        Click="AddMachineButonClick"/>
+            </StackPanel>
+        </ListBox>
+
+
+
+        <Frame Content="Accessories"
+            BorderThickness="1" 
+            BorderBrush="Black" 
+            Height="180" 
+            Width="230" 
+            Canvas.Top="250" 
+            Canvas.Left="250"/>
+
+        <ListBox Name="AccessoryGrid" Height="150" Canvas.Left="255" Canvas.Top="270" Width="220">
+            <StackPanel Orientation="Horizontal">
+                <ComboBox  Name="AccessoryName"
+                    Width="110"
+                    Margin="0,0,50,0"
+                    DisplayMemberPath="Name"
+                    SelectionChanged="AccessoryName_SelectionChanged" />
+                <Button Name="AddAccessory" 
+                    Grid.Column="2"
+                    Width="40"
+        	        Content="Add"
+                    IsEnabled="False"
+        	        Click="AddAccessoryButonClick"/>
+            </StackPanel>
+        </ListBox>
+
+        <TextBlock Name="Incorrect"
+            HorizontalAlignment="Center"
+        	FontSize="14"
+        	Text="" 
+        	Canvas.Left="494" 
+        	Canvas.Top="119" 
+        	Width="101"/>
+        <Button x:Name="Exit" 
+        	Content="Exit" 
+        	Canvas.Left="510" 
+        	Canvas.Top="435" 
+        	Width="101" 
+        	Height="25" 
+        	Click="ExitButtonClick"/>
+        <Button Name="DeleteClient" 
+        	Content="Delete Client" 
+        	Canvas.Left="494" 
+        	Canvas.Top="204" 
+        	Width="101" 
+        	Height="25"
+        	IsEnabled="False"
+        	Click="DeleteClientButtonClick"/>
+        <TextBlock 
+        	Text="Return date:" 
+        	Canvas.Left="494" 
+        	Canvas.Top="245"/>
+        <DatePicker Name="ReturnDate" 
+        	Width="124" Canvas.Left="485" Canvas.Top="266"/>
+        <TextBlock 
+        	Text="Total sum:" 
+        	Canvas.Left="485" 
+        	Canvas.Top="298" Width="60"/>
+        <TextBox Name="Total"
+        	Canvas.Left="551" 
+        	Canvas.Top="298" 
+        	Height="23" 
+        	Width="58"/>
+        <TextBlock 
+        	Text="Advance:" 
+        	Canvas.Left="485" 
+        	Canvas.Top="326" Width="52"/>
+        <TextBox Name="Advance"
+        	Canvas.Left="551" 
+        	Canvas.Top="326" 
+        	Height="23" 
+        	Width="60"/>
+        <Button Name="SaveContract" 
+        	Content="Save contract" 
+        	Canvas.Left="510" 
+        	Canvas.Top="354" 
+        	Width="101" 
+        	Height="25" 
+            IsEnabled="False"
+        	Click="SaveButtonClick"/>
+        <Button Name="EditMachines" 
+        	Content="Edit Machines" 
+        	Canvas.Left="10" 
+        	Canvas.Top="435" 
+        	Width="101" 
+        	Height="25" 
+        	Click="EditMachinesButtonClick"/>
+        <Button Name="EditAccesories" 
+        	Content="Edit Acessories" 
+        	Canvas.Left="250" 
+        	Canvas.Top="435" 
+        	Width="101" 
+        	Height="25" 
+        	Click="EditAccButtonClick"/>
+        <Button Name="EditDealers" 
+        	Content="Edit Dealers" 
+        	Canvas.Left="134" 
+        	Canvas.Top="435" 
+        	Width="101" 
+        	Height="25" 
+        	Click="EditDealersButtonClick"/>
+        <Button Name="Contracts" 
+        	Content="Contracts list" 
+        	Canvas.Left="510" 
+        	Canvas.Top="395" 
+        	Width="101" 
+        	Height="25" 
+        	Click="ContractButtonClick"/>
+    </Canvas>
+</Window>
