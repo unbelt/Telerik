@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* W3Schools Styling */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background: #F1F1F1;
+	font: 12px/1.2 Verdana, sans-serif;
+}
+h1, h2, p {
+	margin: 10px 0px;
+}
+h1 > a {
+	text-decoration: none;
+	color: #000;
+}
+ul {
+	margin: 5px 0px;
+}
+h2 {
+	padding: 3px;
+	background: #808080;
+	color: #fff;
+	font-size: 100%;
+}
+a {
+	color: #961917;
+	margin-bottom: 5px;
+}
+.row {
+	overflow: hidden;
+	margin-left: -10px;
+}
+ [class ^= "span"], [class *= " span"] {
+ float: left;
+ margin-left: 10px;
+}
+.span1 {
+	width: 150px;
+}
+.span3 {
+	width: 450px;
+}
+.container {
+	margin: 10px auto;
+	padding: 0 10px;
+	width: 770px;
+	border: 1px solid #000;
+}
+.pull-left {
+	float: left;
+	margin-right: 10px;
+}
+.search input[type = "search"] {
+	width: 90px;
+}
+ [class ^= "icon"], [class *= " icon"] {
+ display: inline-block;
+ width: 19px;
+ height: 20px;
+ vertical-align: text-bottom;
+}
+.icon-home {
+	background: url(images/icon-home.png);
+}
+.unstyled {
+	list-style: none;
+}
+.inline li {
+	display: inline-block;
+}
+.styled dt {
+	font-weight: bold;
+}
+.styled dd a {
+	color: #000;
+}
+.styled a {
+	text-decoration: none;
+}
+.styled a:hover {
+	text-decoration: underline;
+}
+.pagination a {
+	display: block;
+	padding: 3px;
+	width: 100px;
+	border: 1px solid #2A2A2A;
+	color: #0F0F0F;
+	text-align: center;
+	text-decoration: none;
+}
+.pagination li {
+	position: relative;
+}
+.prev::after, .next::after {
+	position: absolute;
+	top: 3px;
+}
+.prev::after {
+	left: 3px;
+	content: "◄";
+}
+.next::after {
+	right: 3px;
+	content: "►";
+}
+.box {
+	margin-bottom: 2px;
+	padding: 2px;
+	border: 1px solid #8A8A8A;
+	background: #fff;
+	padding-bottom: 5px;
+}
+.box h2 {
+	margin: -2px -2px 0 -2px;
+}
+.nav, .aside {
+	padding-top: 10px;
+}
+.nav .styled {
+	margin-bottom: 10px;
+}
+.content {
+	margin-top: 10px;
+	padding: 10px;
+	border: 1px solid #A1A1A1;
+	background: #fff;
+	padding-bottom: 20px;
+}
+.aside {
+	text-align: center;
+}
+.aside h2 {
+	margin-bottom: 2px;
+	text-transform: uppercase;
+}

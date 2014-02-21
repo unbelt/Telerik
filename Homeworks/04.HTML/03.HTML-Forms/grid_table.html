@@ -3,19 +3,146 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="css/main.css">
-<link rel="stylesheet" type="text/css" href="css/style.css" />
 <title>HTML Table Form</title>
+
+<style type="text/css">
+  @charset "utf-8";
+/* Main CSS Document */
+
+* {
+  margin: 0px;
+}
+html, body {
+  height: 100%;
+  color: #555;
+  background: #f5f5f5;
+  font-family: sans-serif;
+}
+header, section, footer {
+  display: block;
+  padding: 10px;
+}
+table {
+  border: thick;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+dt {
+  margin-top: 20px;
+  font-style: italic;
+  font-size: 24px;
+}
+header h2 {
+  padding: 7px;
+  margin-bottom:  20px;
+  border-top: solid #333 1px;
+  border-bottom: solid #333 1px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #39F;
+}
+fieldset {
+  border: 0px;
+}
+input {
+  padding: 1px;
+}
+label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+section {
+  min-height: 84%;
+  margin-bottom: -20px;
+}
+footer {
+  height: 20px;
+  border-top: solid 1px #999999;
+}
+
+/* Grid Table Styling */
+#grid {
+  text-align: left;
+  width: 1000px;
+  font-size: 12px;
+  margin-left: 10px;
+}
+#grid table {
+  border: 1px solid #B1ABDF;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  border-radius: 15px;
+}
+#grid td, th {
+  border: 1px solid #DFE3EE;
+  padding: 3px;
+  text-align: left;
+  font-weight: normal;
+}
+#grid thead td, th {
+  border: 1px solid #B9B9B9;
+}
+#grid .head_one {
+  background-color: #E7E9EB;
+  height: 25px;
+}
+#grid .head_two {
+  background: #E7E9EB url("../img/thead.png") repeat-x;
+  height: 26px;
+}
+#grid .head_three {
+  background-color: #DFE3E8;
+}
+#grid .total_pages {
+  text-align: right;
+  font-size: 12px;
+}
+#grid input[type=text] {
+  border: solid 1px #CCCCCC;
+  padding: 3px;
+  float: left;
+  margin: 1px;
+}
+#grid input[type=image] {
+  vertical-align: -6px;
+}
+#grid tfoot {
+  background-color: #DFE3E8;
+  background-image: url("../img/tfoot.png");
+  background-repeat: repeat-x;
+  height: 30px;
+  font-size: 10pt;
+}
+#grid tfoot td {
+  border: none;
+}
+#grid a {
+  color: #333;
+  padding: 5px;
+}
+#grid a:hover {
+  color: #09F;
+  border: solid 1px #B1ABDF;
+  padding: 2px 4px 2px 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#grid .active {
+  border: solid 1px #CB7834;
+  padding: 2px 4px 2px 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+</style>
 </head>
 
 <body>
-<header>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-    </ul>
-  </nav>
-</header>
 <section>
   <header>
     <h2><a href="http://www.w3schools.com/html/html_tables.asp"

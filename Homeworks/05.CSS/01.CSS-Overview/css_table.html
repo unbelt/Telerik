@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<title>Basic Table Styling</title>
+
+<style type="text/css">
+  @charset "utf-8";
+/* Main CSS Document */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  color: #555;
+  background: #f5f5f5;
+  font-family: sans-serif;
+}
+header, section, article, footer {
+  display: block;
+  padding: 10px;
+}
+section {
+  min-height: 84%;
+  margin-bottom: -20px;
+}
+article {
+  padding-left: 20px;
+}
+footer {
+  height: 20px;
+  border-top: solid 1px #999999;
+}
+li {
+  margin-bottom: 5px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #09F;
+}
+
+/* Table Page Styling */
+table {
+  width: 600px;
+  border: 1px solid #B1ABDF;
+  border-spacing: 0px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+table td, th {
+  border-right: 1px double #999999;
+  padding: 5px;
+  font-weight: normal;
+}
+
+table img {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+thead > tr {
+  background: url(img/thead.png) repeat-x;
+  border-bottom: 1px solid #DFE3EE;
+  color: #FFF;
+  height: 26px;
+}
+tbody > tr:nth-of-type(3) {
+  background-color: #ECECD8;
+}
+tbody > tr:nth-of-type(2) {
+  background-color: #FFF;
+}
+</style>
+</head>
+
+<body>
+<section>
+  <table>
+    <thead>
+      <tr>
+        <th>Contact name</th>
+        <th>City</th>
+        <th>Country</th>
+        <th>Is Promoted</th>
+      </tr>
+    </thead>
+    <form>
+    <tbody>
+    <tr>
+        <td>Maria Anders</td>
+        <td>Berlin</td>
+        <td><img src="img/Germany.png" width="32" height="32" alt="Germany">Germany</td>
+        <td><input type="checkbox" disabled></td>
+      </tr>
+      <tr>
+        <td>Ana Trujillo</td>
+        <td>Mecsico D.F.</td>
+        <td><img src="img/Mexico.png" width="32" height="32" alt="Mexico">Mexico</td>
+        <td><input type="checkbox" checked disabled></td>
+      </tr>
+      <tr>
+        <td>Antonio Moreno</td>
+        <td>Mecsico D.F.</td>
+        <td><img src="img/Mexico.png" width="32" height="32" alt="Mexico">Mexico</td>
+        <td><input type="checkbox" disabled></td>
+      </tr>
+      <tr>
+        <td>Thomas Hardy</td>
+        <td>London</td>
+        <td><img src="img/UK.png" width="32" height="32" alt="UK">UK</td>
+        <td><input type="checkbox" disabled></td>
+      </tr>
+    </tbody>
+    </form>
+  </table>
+</section>
+<footer>
+  <p>&copy; 2014 Flyer. No rights are reserved.</p>
+</footer>
+</body>
+</html>
