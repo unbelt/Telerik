@@ -42,7 +42,7 @@ Telerik Academy Projects
 
 ###[CSS](https://github.com/unbelt/Telerik/tree/master/Homeworks/05.CSS)
   - [CSS Overview](https://github.com/unbelt/Telerik/tree/master/Homeworks/05.CSS/01.CSS-Overview)
-  - [CSS Presentation]()
+  - [CSS Presentation]
   - [CSS Layout]
   - [SASS]
   - [LESS]
