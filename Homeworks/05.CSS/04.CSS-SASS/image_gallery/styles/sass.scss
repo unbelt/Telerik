@@ -1,0 +1,35 @@
+﻿@import "mixins.scss";
+
+@include reset();
+
+article {
+	padding: 15px;
+
+	form {
+		input {
+			display: none;
+		}
+
+		label {
+			display: inline;
+
+			>img {
+				width: 200px;
+				height: 140px;
+			}
+		}
+
+		section {
+		padding: 15px;
+
+			>img {
+				display: none;
+			}
+
+			input:checked + img {
+				display: block;
+				border: 1px solid lightblue;
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+﻿@mixin reset() {
+	html, body, div, span, h1, h2, h3, h4, h5, h6, p, img, ul, li,
+	form, label, table, article, aside, footer, header, nav, section {
+		margin:0;
+		padding:0;
+		border:0;
+		outline:0;
+		font-size:100%;
+		vertical-align:baseline;
+		background:transparent;
+		}
+}
+
+@mixin borders($px, $type, $color, $radius) {
+	border: $px $type $color;
+    border-radius: $radius;
+}
+
+@mixin linear-gradient($start-color, $mid-color, $end-color) {
+	background-image: -webkit-linear-gradient(top, $start-color, $mid-color, $end-color);
+	background-image:    -moz-linear-gradient(top, $start-color, $mid-color, $end-color);
+	background-image:     -ms-linear-gradient(top, $start-color, $mid-color, $end-color);
+	background-image:      -o-linear-gradient(top, $start-color, $mid-color, $end-color);
+	background-image:         linear-gradient(top, $start-color, $mid-color, $end-color);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr=#{$start-color}, EndColorStr=#{$end-color});
+}
+
+@mixin position($pos, $top, $right) {
+	position: $pos;
+	top: $top;
+	right: $right;
+}
+
+@mixin clearfix {
+  zoom: 1;
+
+  &:after {
+    display: block;
+    content: "";
+    height: 0;
+    clear: both;
+    }
+}

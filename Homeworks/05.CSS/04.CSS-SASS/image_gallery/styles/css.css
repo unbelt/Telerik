@@ -1,0 +1,27 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, img, ul, li,
+form, label, table, article, aside, footer, header, nav, section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+article {
+  padding: 15px; }
+  article form input {
+    display: none; }
+  article form label {
+    display: inline; }
+    article form label > img {
+      width: 200px;
+      height: 140px; }
+  article form section {
+    padding: 15px; }
+    article form section > img {
+      display: none; }
+    article form section input:checked + img {
+      display: block;
+      border: 1px solid lightblue; }
+
