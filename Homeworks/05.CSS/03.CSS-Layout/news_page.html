@@ -2,144 +2,113 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<link rel="stylesheet" type="text/css" href="css/news.css">
-<title>BTV Home Page</title>
+<title>BTV News Page</title>
 
 <style type="text/css">
-div#wrapper {
-  width: 1040px;
+body, h1, ul, li {
+	margin: 0;
+	padding: 0;
+	font: 15px/1.2 Tahoma, sans-serif;
+	font-weight: normal;
 }
-
-nav#cat { /* Side Menu */
-  width: 170px;
-  float: left;
-  font-size: 14px;
-  background-color: #F1F1F1;
+img {
+	border: none;
 }
-nav#cat > ul {
-  list-style-type: none;
+a {
+	color: #A5AFB3;
+	text-decoration: none;
 }
-nav#cat > ul li {
-  margin: 0px;
-  padding: 0px;
+nav {
+	padding: 20px;
 }
-nav#cat > a {
-  text-decoration: none;
-  color: #000;
-  display: block;
+nav li {
+	display: inline;
+	margin-right: 30px;
+	font-size: 24px;
 }
-nav#cat > a:hover {
-  text-decoration: underline;
+#wrapper {
+	margin: 15px auto 0;
+	width: 598px;
+	border: 5px solid #ddd;
+	border-radius: 3px;
+	background: #aaa;
+	box-shadow: 1px 1px 6px #444;
 }
-nav#cat > a.home {
-  font-weight: bold;
+.tabs {
+	position: relative;
+	overflow: hidden;
+	height: 287px;
+	background: #1E3741;
 }
-nav#cat > a.title {
-  color: #900;
-  font-weight: bold;
-  margin-top: 20px;
+.tab {
+	float: left;
 }
-
-section#main { /* Main Section */
-  width: 630px;
-  float: left;
-  background-color: #FFF;
-  border: 2px #CCCCCC groove;
-  margin: 0px;
+.tab-title a {
+	display: block;
+	padding: 5px 15px;
+	background: #4B5F67;
+	color: #93ACB6;
 }
-section#main > header {
-  width: 610px;
-  border-bottom: 2px #CCCCCC groove;
+.tab:not(:last-child) .tab-title a {
+	border-right: 1px solid #1E3741;
 }
-section#main > header h1 {
-  margin-bottom: 15px;
+.tab-title a {
+	position: relative;
+	z-index: 1;
 }
-section#main > header a, footer a {
-  text-decoration: none;
-  display: inline-block;
-  border: 2px #CCCCCC groove;
-  height: 19px;
-  width: 100px;
-  text-align: center;
-  font-size: 14px;
-  color: #000;
+.tab:first-child .tab-title a::after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 598px;
+	height: 100%;
+	content: " ";
 }
-
-article.summary { /* Article Section */
-  margin: 0px;
-  padding: 0px;
+.tab-content {
+	top: 28px;
+	left: 0;
+	width: 100%;
 }
-article.summary > header {
-  padding-left: 0px;
-  padding-right: 0px;
-  font-weight: normal;
+.tab-item img {
+	top: 0;
+	right: 0;
 }
-article.summary > header h2 {
-  background: #808080;
-  color: #FFF;
-  font-size: 18px;
-  padding-left: 2px;
+.tab-content, .tab-item img {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
 }
-article.summary > figure img {
-  width: 120px;
-  height: 70px;
-  border: none;
-  float: left;
-  margin-right: 20px;
+.tab-item img {
+	-webkit-transition: opacity 333ms ease-out;
+	-moz-transition: opacity 333ms ease-out;
+	-o-transition: opacity 333ms ease-out;
+	transition: opacity 333ms ease-out;
 }
-
-article.summary > p {
-  color: #000;
-  margin-bottom: 10px;
+.tab-item a {
+	display: block;
+	padding: 5px 10px;
+	width: 180px;
 }
-article.summary > a.more {
-  color: #900;
-  font-weight: normal;
-  text-decoration: underline;
-  display: block;
-  margin-top: 14px;
+.tab-item:not(:last-child) a {
+	border-bottom: 1px solid #3A4F58;
 }
-article#top {
-  font-weight: bold;
+.tabs:not(:hover) .tab:first-child .tab-title a, .tab:hover .tab-title a {
+	background: transparent;
+	color: #fff;
 }
-
-section#main > footer { /* Main Section Footer */
-  border-top: 2px #CCCCCC groove;
-  border-bottom: 2px #CCCCCC groove;
-  margin-bottom: 40px;
+.tabs:not(:hover) .tab-item:first-child a, .tab-item:hover a, .tab-title:hover ~ .tab-content .tab-item:first-child a {
+	background: #00968C;
+	color: #fff;
 }
-
-aside#sector { /* Aside Sector */
-  width: 220px;
-  float: right;
-  font-size: 14px;
-  padding: 0px;
-  margin: 0px;
-}
-aside#web > section {
-  border: 1px #999 groove;
-  padding: 0px;
-}
-aside#web > section header {
-  padding: 0px;
-}
-aside#web > section h2 {
-  background: #808080;
-  color: #FFF;
-  font-size: 16px;
-  padding-left: 2px;
+.tabs:not(:hover) .tab-item:first-child img, .tab-item:hover img, .tab-title:hover ~ .tab-content .tab-item:first-child img, .tabs:not(:hover) .tab:first-child .tab-content, .tab:hover .tab-content {
+	z-index: 1;
+	opacity: 1;
 }
 </style>
 </head>
 
 <body>
-<header>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-    </ul>
-  </nav>
-</header>
 <div id="wrapper">
   <article class="tabs">
     <section class="tab">

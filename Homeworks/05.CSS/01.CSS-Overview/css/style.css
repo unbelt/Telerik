@@ -1,0 +1,52 @@
+/* Common Styles */
+
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+html, body {
+  height: 100%;
+  color: #555;
+  background: #f5f5f5;
+  font-family: sans-serif;
+}
+header, section, article, footer {
+  display: block;
+  padding: 10px;
+}
+section {
+  min-height: 84%;
+  margin-bottom: -20px;
+}
+article {
+  padding-left: 20px;
+}
+footer {
+  height: 20px;
+  border-top: solid 1px #999999;
+}
+li {
+  margin-bottom: 5px;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #09F;
+}
+dl {
+  line-height: 40px;
+}
+dt {
+  font-style: italic;
+  float: left;
+  color: #FFF;
+}
+dd {
+  margin-left: 150px;
+  color: #AFBBB7;
+}
+dd a {
+  color: #F3F9B3;
+}
