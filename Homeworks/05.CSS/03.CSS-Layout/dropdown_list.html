@@ -4,6 +4,35 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <title>Dropdown List</title>
+
+<style type="text/css">
+ul.dropdown {
+  margin-left: 50px;
+  font-size: 18px;
+}
+ul.dropdown ul, li {
+  list-style-type: none;
+}
+ul.dropdown a {
+  text-decoration: none;
+  color: #000;
+}
+ul.dropdown .sub a {
+  color: #666;
+}
+ul.dropdown a:hover {
+  text-decoration: underline;
+}
+ul.dropdown ul {
+  padding-left: 20px;
+}
+ul.dropdown .sub {  /* Sub list implementation */
+  display: none;
+}
+ul.dropdown .dd:hover > .sub {
+  display: block;
+}
+</style>
 </head>
 
 <body>

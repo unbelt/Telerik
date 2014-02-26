@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/* Common Styles */
+html, body {
+	color: #555;
+	background: #f5f5f5;
+}
+nav li {
+	display: inline;
+	font-size: 22px;
+}
+section {
+	padding: 30px 10px 10px 10px;
+}
