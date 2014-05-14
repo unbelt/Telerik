@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Data Types and Variables Tests</title>
+	<script type="text/javascript" src="variables.js"></script>
+	<script>
+
+	// 01. Assign all the possible JavaScript literals to different variables.
+		function stringVariable() {
+			alert(stringVar);
+		}
+
+		function numberVariable() {
+			alert(numberOne + "\n" + numberTwo);
+		}
+
+		function booleanVariable() {
+			alert(boolVar);
+		}
+
+	// 02. Create a string variable with quoted text in it.
+	//     For example: 'How you doin'?', Joey said.
+		function escapingSequence() {
+			alert(escaping);
+		}
+
+	// 03. Try typeof on all variables you created.
+		function typeofString() {
+			alert(typeof(stringVar));
+		}
+
+		function typeofNumber() {
+			alert(typeof(numberTwo));
+		}
+
+		function typeofBool() {
+			alert(typeof(boolVar));
+		}
+
+	// 04. Create null, undefined variables and try typeof on them.
+		function typeofNull() {
+			alert(typeof(nullVar));
+		}
+
+		function typeofUndefined() {
+			alert(typeof(undefinedVar));
+		}
+	</script>
+</head>
+<body>
+
+<h1>Data Types and Variables</h1>
+
+<ol>
+
+	<!-- String, number and boolean variables -->
+	<li><h3>Assign all the possible JavaScript literals to different variables.</h3>
+		<ol type="a">
+			<li><input type="button" value="String Variable" onclick="stringVariable()" /></li>
+			<li><input type="button" value="Number Variable" onclick="numberVariable()" /></li>
+			<li><input type="button" value="Boolean Variable" onclick="booleanVariable()" /></li>
+		</ol>
+	</li>
+
+	<!-- Escaping in string -->
+	<li><h3>Create a string variable with quoted text in it. For example: 'How you doin'?', Joey said.</h3>
+		<ol type="a">
+			<li><input type="button" value="Escaping Sequence" onclick="escapingSequence()" /></li>
+		</ol>
+	</li>
+
+	<!-- Type of string, number and boolean variables -->
+	<li><h3>Try typeof on all variables you created.</h3>
+		<ol type="a">
+			<li><input type="button" value="Type of String" onclick="typeofString()" /></li>
+			<li><input type="button" value="Type of Number" onclick="typeofNumber()" /></li>
+			<li><input type="button" value="Type of Boolean" onclick="typeofBool()" /></li>
+		</ol>
+	</li>
+	
+	<!-- Type of null and undefined variables -->
+	<li><h3>Create null, undefined variables and try typeof on them.</h3>
+		<ol type="a">
+			<li><input type="button" value="Type of null" onclick="typeofNull()" /></li>
+			<li><input type="button" value="Type of undefined" onclick="typeofUndefined()" /></li>
+		</ol>
+	</li>
+
+</ol>
+
+</body>
+</html>

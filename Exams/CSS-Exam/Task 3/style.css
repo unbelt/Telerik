@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 17px;
+    font-family: Corbel;
+    padding: 3px 5px;
+}
+
+    body #root {
+        width: 360px;
+        padding: 20px 0 0 27px;
+        border-top: 4px outset black;
+        border-left: 4px outset black;
+        border-radius: 16px;
+    }
+
+        body #root > h1 {
+            margin: 0 0 20px 50px;
+            font-size: 30px;
+        }
+
+        body #root > div.widget {
+            width: 280px;
+            height: 180px;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 18px;
+            background: -webkit-linear-gradient(top, #cbf7be 15%, #e3d76d 65%);
+        }
+
+            body #root > div.widget div.add-employee {
+                text-align: right;
+            }
+
+                body #root > div.widget div.add-employee label {
+                    font-weight: bold;
+                }
+
+                body #root > div.widget div.add-employee input {
+                    padding: 5px;
+                    border: 4px inset #caf7be;
+                    margin-bottom: 5px;
+                    border-radius: 5px;
+                    width: 160px;
+                    background: transparent;
+                    margin-left: 5px;
+                }
+
+                body #root > div.widget div.add-employee input#tb-lname {
+                    margin-bottom: 10px;
+                }
+
+                body #root > div.widget div.add-employee button {
+                    width: 280px;
+                    background: transparent;
+                    border: 4px inset #caf7be;
+                    border-radius: 5px;
+                    height: 35px;
+                    margin-top: 25px;
+                    font-size: 17px;
+                }
+
+                /*Hovers*/
+                body #root > div.widget div.add-employee button:hover {
+                    background: -webkit-linear-gradient(top, #cbf7be 15%, #e5d96e 65%);
+                }
+
+                body #root > div.widget div.add-employee div#dd-rank:hover ul, div#dd-title:hover ul {
+                    display: block;
+                    width: 150px;
+                    position: absolute;
+                    top: 28%;
+                    left: 24%;
+                    border: 1px solid black;
+                    background: -webkit-linear-gradient(top, #cbf7be 15%, #e5d96e 65%);
+                    border-radius: 5px;
+                    text-align: left;
+                    padding: 5px;
+                }
+
+                body #root > div.widget div.add-employee div#dd-rank:hover ul li, div#dd-title:hover ul li {
+                    border-bottom: 1px solid black;
+                    text-align: center;
+                    height: 25px;
+                }
+
+                body #root > div.widget div.add-employee div#dd-rank:hover ul li:hover, div#dd-title:hover ul li:hover {
+                    background: #c9e27a;
+                }
+
+                body #root > div.widget div.add-employee div#dd-rank:hover ul li:last-of-type, div#dd-title:hover ul li:last-of-type {
+                    border-bottom: none;
+                }
+
+                body #root > div.widget div.add-employee div#dd-rank span.chosen {
+                    padding: 10px 100px 0 30px;
+                    background-image: url(images/down-arrow.png);
+                    background-repeat: no-repeat;
+                    background-position: 5% 100%;
+                }
+
+                body #root > div.widget div.add-employee div#dd-title span.chosen {
+                    padding: 10px 7px 0 30px;
+                    background-image: url(images/down-arrow.png);
+                    background-repeat: no-repeat;
+                    background-position: 5% 100%;
+                }
+
+                body #root > div.widget div.add-employee div#dd-rank span.chosen:hover {
+                    background-image: url(images/left-arrow.png);
+                    background-repeat: no-repeat;
+                    background-position: 5% 100%;
+                }
+                body #root > div.widget div.add-employee div#dd-title span.chosen:hover {
+                    background-image: url(images/left-arrow.png);
+                    background-repeat: no-repeat;
+                    background-position: 5% 100%;
+                }
+
+::-webkit-input-placeholder {
+    font-style: italic;
+    padding-left: 15px;
+    color: black;
+}
+
+body #root > div.widget div.dropdown {
+    display: inline;
+}
+
+body #root > div.widget div#dd-rank ul, div#dd-title ul {
+    list-style-type: none;
+    display: none;
+}

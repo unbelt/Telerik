@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#wrapper {
+    width: 960px;
+    padding-left: 4px;
+}
+
+.clear {
+    clear: both;
+}
+
+/*Header*/
+div#wrapper > header {
+    background-image: url(images/header-bg.png);
+    background-repeat: repeat-x;
+    border-bottom: 5px solid #39c518;
+}
+
+    div#wrapper > header div#title {
+        padding: 20px;
+        display: inline-block;
+    }
+
+        div#wrapper > header div#title h1 {
+            font-size: 34px;
+            color: #eeffee;
+        }
+
+        div#wrapper > header div#title h2 {
+            font-size: 30px;
+            color: #c5d1c3;
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+    div#wrapper > header nav#nav {
+        float: right;
+        padding: 44px 13px 0 0;
+    }
+
+        div#wrapper > header nav#nav ul {
+            list-style-type: none;
+            display: block;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+            div#wrapper > header nav#nav ul li {
+                display: inline;
+                margin-right: 15px;
+                color: #cc6600;
+            }
+
+/*Content*/
+div#wrapper > div#content {
+    width: 760px;
+    font-size: 14px;
+    float: left;
+}
+
+    div#wrapper > div#content > h1 {
+        padding: 20px 0;
+        font-size: 30px;
+        color: #59770e;
+    }
+
+    div#wrapper > div#content article p {
+        margin-bottom: 14px;
+        line-height: 16px;
+        color: #494949;
+    }
+
+    /*Aside*/
+    div#wrapper > aside {
+        float: left;
+        text-align: left;
+        margin: 20px 0;
+        color: #59770e;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    div#wrapper > aside hr {
+        margin: 7px 0 9px 0;
+        width: 198px;
+    }
+
+    div#wrapper > aside form input {
+        width: 155px;
+        padding: 1px;
+        margin-left: 2px;
+    }
