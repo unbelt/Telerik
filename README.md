@@ -46,7 +46,7 @@ Telerik Academy Projects
   - [CSS Layout](https://github.com/unbelt/Telerik/tree/master/Homeworks/04b.CSS/03.CSS-Layout)
   - [SASS](https://github.com/unbelt/Telerik/tree/master/Homeworks/04b.CSS/04.CSS-SASS)
   - [LESS](https://github.com/unbelt/Telerik/tree/master/Homeworks/04b.CSS/05.CSS-LESS)
-  - 
+
 ###[JavaScript](https://github.com/unbelt/Telerik/tree/master/Homeworks/05a.JavaScript)
   - [Data Types and Variables](https://github.com/unbelt/Telerik/tree/master/Homeworks/05a.JavaScript/01.Data-Types-and-Variables)
   - [Operators Expressions](https://github.com/unbelt/Telerik/tree/master/Homeworks/05a.JavaScript/02.Operators-Expressions)
