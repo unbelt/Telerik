@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Functions Tests</title>
+	<script type="text/javascript" src="functions.js"></script>
+	<style type="text/css">
+		input[type='text'] { margin-left: 30px; }
+		input.search-box { width: 90px; }
+		em { margin-left: 50px; }
+	</style>
+</head>
+<body>
+
+	<h1>Functions</h1>
+	<ol>
+		<li><h3>Write a function that returns the last digit of given integer as an English word.</h3>
+			<em>Examples: 512 -> "two", 1024 -> "four", 12309 -> "nine"</em><br>
+			<br>
+			<input type="text" id="tw-input" placeholder="Enter a number" onkeypress="onEnter('tw-submit')" />
+			<input type="button" id="tw-submit" value=" -> " onclick="numToWord();" />
+			<span id="tw-output"></span>
+		</li>
+		
+		<li><h3>Write a function that reverses the digits of given decimal number.</h3>
+			<em>Example: 256 -> 652</em><br>
+			<br>
+			<input type="text" id="rd-input" placeholder="Enter something" onkeypress="onEnter('rd-submit')" />
+			<input type="button" id="rd-submit" value=" -> " onclick="reverseDigits();" />
+			<span id="rd-output"></span>
+		</li>
+
+		<li><h3>Write a function that finds all the occurrences of word in a text.</h3>
+			<em> - The search can case sensitive or case insensitive</em><br>
+			<br>
+			<textarea id="cw-input" rows="5" cols="30" placeholder="Enter some random text..."></textarea><br>
+			<input type="text" id="cw-search" placeholder="Count word..." onkeypress="onEnter('cw-submit')" />
+			<input type="button" id="cw-submit" value=" -> " onclick="countWords();" />
+			<span id="cw-output"></span><br>
+			
+			<input type="radio" name="case" value="sensitive" id="cw-sensitive" checked="checked" onselect="">
+			<label for="cw-sensitive">Case sensitive</label>
+			
+			<input type="radio" name="case" value="insensitive" id="cw-insensitive">
+			<label for="cw-insensitive">Case insensitive</label>
+		</li>
+
+		<li><h3>Write a function to count the number of <strike>divs</strike> (spans) on the web page</h3>
+			<input type="button" id="cd-submit" value="Count" onclick="countDivs();" />
+			<span id="cd-output"></span>
+		</li>
+
+		<li><h3>Write a function that counts how many times given number appears in given array.</h3>
+			
+			<br>
+			<input type="text" id="cn-input" placeholder="Enter few numbers" />
+			<input type="text" id="cn-search" placeholder="Count number..." onkeypress="onEnter('cn-submit')" class="search-box" />
+			<input type="button" id="cn-submit" value=" -> " onclick="cuntNumber();" />
+			<span id="cn-output"></span><br>
+			<em>comma-separated</em><br>
+			<em>Test with random numbers</em>
+			<input type="button" id="cn-submit" value="Test" onclick="cuntNumberTest();" />
+		</li>
+
+		<li><h3>Write a function that checks if the element at given position in given array<br>
+				of integers is bigger than its two neighbors (when such exist).</h3>
+
+			<input type="text" id="cf-input" placeholder="Enter few numbers" />
+			<input type="text" id="cf-search" placeholder="Check position..." onkeypress="onEnter('cf-submit')" class="search-box" />
+			<input type="button" id="cf-submit" value=" -> " onclick="checkForNumber();" />
+			<span id="cf-output"></span><br>
+			<em>comma-separated</em>
+			<em>count from 0</em>
+		</li>
+
+		<li><h3>Write a function that returns the index of the first element in array<br>
+				that is bigger than its neighbors, or -1, if there’s no such element.</h3>
+
+			<textarea id="ge-input" rows="5" cols="30" placeholder="Enter some random text..." onkeypress="onEnter('ge-submit')"></textarea><br>
+			<input type="button" id="ge-submit" value="Get" onclick="getElement();" />
+			<span id="ge-output"></span>
+		</li>
+
+	</ol>
+
+</body>
+</html>

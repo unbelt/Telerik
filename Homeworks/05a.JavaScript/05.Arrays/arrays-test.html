@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Arrays Tests</title>
+	<script type="text/javascript" src="arrays.js"></script>
+	<style type="text/css">
+		input[type='text'], em { margin-left: 30px; }
+		input.search-box { width: 80px; }
+	</style>
+</head>
+<body>
+
+	<h1>Arrays</h1>
+
+	<ol>
+		<li><h3>Write a script that allocates array of 20 integers and initializes each element by its index multiplied by 5.</h3>
+
+			<input type="button" value=" Test " onclick="multiplyArray()" />
+			<span id="ma-output"></span>
+		</li>
+		
+		<li><h3>Write a script that compares two char arrays lexicographically (letter by letter).</h3>
+
+			<input type="text" id="cc-first" placeholder="First char array" onkeypress="onEnter('cc-submit')" /><br>
+			<input type="text" id="cc-second" placeholder="Second char array" onkeypress="onEnter('cc-submit')" />
+			<input type="button" id="cc-submit" value=" -> " onclick="compareChars()" /><br>
+			<em>comma-separated</em><br>
+			<span id="cc-output"></span>
+		</li>
+
+		<li><h3>Write a script that finds the maximal sequence of equal elements in an array.</h3>
+			<em>Example: {2, 1, 1, 2, 3, 3, 2, 2, 2, 1} -> {2, 2, 2}.</em><br>
+			<br>
+			<input type="text" id="ms-input" placeholder="Enter few numbers" onkeypress="onEnter('ms-submit')" />
+			<input type="button" id="ms-submit" value=" -> " onclick="maxSequence()" />
+			<span id="ms-output"></span><br>
+			<em>comma-separated</em><br>
+		</li>
+
+		<li><h3>Write a script that finds the maximal increasing sequence in an array.</h3>
+			<em>Example: {3, 2, 3, 4, 2, 2, 4} -> {2, 3, 4}.</em><br>
+			<br>
+			<input type="text" id="is-input" placeholder="Enter few numbers" onkeypress="onEnter('is-submit')" />
+			<input type="button" id="is-submit" value=" -> " onclick="maxIncSequence()" />
+			<span id="is-output"></span><br>
+			<em>comma-separated</em><br>
+		</li>
+
+		<li><h3>Sorting an array means to arrange its elements in increasing order.<br>
+				Write a script to sort an array. Use the "<a href="http://en.wikipedia.org/wiki/Selection_sort" title="info" target="_blank">selection sort</a>" algorithm:<br>
+				Find the smallest element, move it at the first position,<br>
+				find the smallest from the rest, move it at the second position, etc.</h3>
+
+			<input type="text" id="ss-input" placeholder="Enter some input" onkeypress="onEnter('ss-submit')" />
+			<input type="button" id="ss-submit" value=" -> " onclick="selectionSort()" />
+			<span id="ss-output"></span>
+		</li>
+
+		<li><h3>Write a program that finds the most frequent number in an array.</h3>
+			<em>Example: {4, 1, 1, 4, 2, 3, 4, 4, 1, 2, 4, 9, 3} -> 4 (5 times)</em><br>
+			<br>
+			<input type="text" id="mf-input" placeholder="Enter some input" onkeypress="onEnter('mf-submit')" />
+			<input type="button" id="mf-submit" value=" -> " onclick="mostFrequent()" />
+			<span id="mf-output"></span><br>
+			<em>comma-separated</em><br>
+		</li>
+
+		<li><h3>Write a program that finds the index of given element in a sorted array of integers<br>
+				by using the <a href="http://en.wikipedia.org/wiki/Binary_search_algorithm" title="info" target="_blank">binary search</a> algorithm.</h3>
+
+			<input type="text" id="bs-input" placeholder="Enter some input" onkeypress="onEnter('bs-submit')" />
+			<input type="text" id="bs-search" placeholder="Search..." onkeypress="onEnter('bs-submit')" class="search-box" />
+			<input type="button" id="bs-submit" value=" -> " onclick="binarySearch()" />
+			<span id="bs-output"></span>
+		</li>
+	</ol>
+
+</body>
+</html>

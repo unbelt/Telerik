@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Loops Tests</title>
+	<script type="text/javascript" src="loops.js"></script>
+	<style type="text/css">
+		input[type='text'], em { margin-left: 30px; }
+	</style>
+</head>
+<body>
+
+	<h1>Loops</h1>
+
+	<ol>
+		<li><h3>Write a script that prints all the numbers from 1 to N</h3>
+
+			<input type="text" id="ft-input" placeholder="Ending number" onkeypress="onEnter('ft-submit')" />
+			<input type="button" id="ft-submit" value=" -> " onclick="fromTo()" />
+			<span id="ft-output"></span>
+		</li>
+
+		<li><h3>Write a script that prints all the numbers from 1 to N, that are not divisible by 3 and 7 at the same time</h3>
+
+			<input type="text" id="nd-input" placeholder="Ending number" onkeypress="onEnter('nd-submit')" />
+			<input type="button" id="nd-submit" value=" -> " onclick="notDivisible()" />
+			<span id="nd-output"></span>
+		</li>
+
+		<li><h3>Write a script that finds the max and min number from a sequence of numbers</h3>
+
+			<input type="text" id="mm-input" placeholder="Enter few numbers" onkeypress="onEnter('mm-submit')" />
+			<input type="button" id="mm-submit" value=" -> " onclick="minAndMax()" />
+			<span id="mm-output"></span><br>
+			<em>comma-separated</em>
+		</li>
+
+		<li><h3>Write a script that finds the lexicographically smallest and largest property in document, window and navigator objects</h3>
+			<label>Select properties to show: </label><br>
+			<select multiple="multiple" id="properties" onkeypress="onEnter('pi-submit')">
+				<option value="document">Document</option>
+				<option value="window">Window</option>
+				<option value="navigator">Navigator</option>
+			</select>
+
+			<input type="button" id="pi-submit" value="Show" onclick="propertyInfo()" /><br>
+			<span id="pi-output"></span>
+		</li>
+	</ol>
+
+</body>
+</html>

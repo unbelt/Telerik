@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Conditional Statements Tests</title>
+	<script type="text/javascript" src="statements.js"></script>
+	<style type="text/css">
+		input[type='text'], em { margin-left: 30px; }
+	</style>
+</head>
+<body>
+
+	<h1>Conditional Statements</h1>
+
+	<ol>
+		<li><h3>Write an if statement that examines two integer variables and<br />
+				exchanges their values if the first one is greater than the second one.</h3>
+
+			<input type="text" id="ex-input-one" placeholder="First number" /><br />
+			<input type="text" id="ex-input-two" placeholder="Second number" />
+			<input type="button" value=" -> " onclick="exchangeValues()" />
+			<span id="ex-output"></span>
+		</li>
+
+		<li><h3>Write a script that shows the sign (+ or -) of the product of<br />
+				three real numbers without calculating it. Use a sequence of if statements.</h3>
+
+			<input type="text" id="ss-input" placeholder="Enter few numbers" />
+			<input type="button" value=" -> " onclick="showSign()" />
+			<span id="ss-output"></span><br />
+			<em>comma-separated</em>
+		</li>
+
+		<li><h3>Write a script that finds the biggest of three integers using nested if statements.</h3>
+
+			<input type="text" id="bi-input" placeholder="Enter three numbers" />
+			<input type="button" value=" -> " onclick="biggestInt()" />
+			<span id="bi-output"></span><br />
+			<em>comma-separated</em>
+		</li>
+
+		<li><h3>Sort 3 real values in descending order using nested if statements.</h3>
+
+			<input type="text" id="sv-input" placeholder="Enter three numbers" />
+			<input type="button" value=" -> " onclick="sortValues()" />
+			<span id="sv-output"></span><br />
+			<em>comma-separated</em>
+		</li>
+
+		<li><h3>Write script that asks for a digit and depending on the input<br />
+				shows the name of that digit (in English) using a switch statement.</h3>
+
+			<input type="text" id="dn-input" placeholder="Enter a digit" />
+			<input type="button" value=" -> " onclick="digitName()" />
+			<span id="dn-output"></span>
+		</li>
+
+		<li><h3>Write a script that enters the coefficients a, b and c of a quadratic equation<br />
+				a*x2 + b*x + c = 0 and calculates and prints its real roots.<br />
+				<em>Note that quadratic equations may have 0, 1 or 2 real roots.</em></h3>
+
+			<input type="text" id="rr-input-a" placeholder="Coefficient a" /><br />
+			<input type="text" id="rr-input-b" placeholder="Coefficient b" /><br />
+			<input type="text" id="rr-input-c" placeholder="Coefficient c" />
+			<input type="button" value=" -> " onclick="calcRealRoot()" />
+			<span id="rr-output"></span>
+		</li>
+
+		<li><h3>Write a script that finds the greatest of given 5 variables.</h3>
+
+			<input type="text" id="gi-input" placeholder="Enter few numbers" />
+			<input type="button" value=" -> " onclick="greatestInt()" />
+			<span id="gi-output"></span><br />
+			<em>comma-separated</em>
+		</li>
+
+		<li><h3>Write a script that converts a number in the range [0...999]<br />
+	    		to a text corresponding to its English pronunciation.</h3>
+	    		Examples: <br />
+			<em>0 -> 'Zero'</em><br />
+			<em>273 -> 'Two hundred seventy three'</em><br />
+			<em>400 -> 'Four hundred'</em><br />
+			<em>501 -> 'Five hundred and one'</em><br />
+			<em>711 -> 'Seven hundred and eleven'</em><br />
+			<br />
+
+			<input type="text" id="tw-input" placeholder="Enter a number" />
+			<input type="button" value=" -> " onclick="intToWord()" />
+			<span id="tw-output"></span><br />
+		</li>
+	</ol>
+
+</body>
+</html>
