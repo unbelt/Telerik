@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document Object Model Test</title>
+	<script type="text/javascript" src="dom.js"></script>
+	<style type="text/css">
+		input { margin-left: 30px; }
+	</style>
+</head>
+<body>
+
+	<h1>Document Object Model</h1>
+
+	<ol>
+		<li><h3>Write a script that selects all the <strike>div</strike> h3 nodes that are directly inside <strike>other div</strike> li elements.</h3>
+			<ul>
+				<li>Create a function using querySelectorAll()</li>
+				<li>Create a function using getElementsByTagName()</li>
+			</ul><br />
+			<input type="button" value="Show (query)" onclick="getHeadings('query')" />
+			<input type="button" value="Show (ByTagName)" onclick="getHeadings()" />
+			<input type="button" value="Clear" onclick="clearOutput('gh-output')" /><br /><br />
+			<span id="gh-output"></span>
+		</li>
+
+		<li><h3>Create a function that gets the value of &lt;input type="text"&gt; ands prints its value to the console.</h3>
+		<input type="text" id="gi-input" placeholder="value..." onkeypress="onEnter('gi-submit')" />
+			<input type="button" value="Show" onclick="getInputValue()" />
+			<span id="gi-output"></span>
+		</li>
+
+		<li><h3>Crеate a function that gets the value of &lt;input type="color"&gt; and sets the background of the body to this value.</h3>
+		<input type="color" value="#cccccc" id="gc-input" />
+			<input type="button" value="Change" onclick="getInputColorValue()" />
+		</li>
+	</ol>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>SVG Example</title>
+    <style type="text/css">
+    .mean {
+        font: 34px arial, sans-serif;
+    }
+    .express {
+        font: 26px arial, sans-serif;
+    }
+    h1 {
+        color: lightblue;
+        text-align: center;
+    }
+    svg {
+        border: 2px solid lightblue;
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    </style>
+</head>
+
+<body>
+    <h1>SVG</h1>
+
+    <svg width="750px" height="400px">
+        <!-- Draw 'MEAN' -->
+        <text x="265" y="110" fill="grey" class="mean">M</text>
+        <text x="265" y="170" fill="black" class="mean">E</text>
+        <text x="265" y="230" fill="red" class="mean">A</text>
+        <text x="265" y="290" fill="yellowgreen" class="mean">N</text>
+
+        <!-- Draw circles -->
+        <circle cx="375" cy="100" r="55" fill="grey" />
+        <path fill="yellowgreen" d="M 375, 70
+            C340, 95, 375, 130, 375, 120" />
+
+        <path fill="green" d="M 375, 70
+            C410, 95, 380, 130, 375, 120" />
+
+        <circle cx="375" cy="160" r="55" fill="black" />
+        <text x="330" y="165" fill="white" class="express">express</text>
+
+        <circle cx="375" cy="220" r="55" fill="red" />
+        <path stroke="lightgrey" fill="darkred" stroke-width="2" d="M 375, 200
+                                                                        L 395, 210
+                                                                        L 375, 280" />
+
+        <path stroke="lightgrey" fill="red" stroke-width="2" d="M 375, 200
+                                                                    L 355, 210,
+                                                                    L 375 280" />
+
+        <path stroke="white" fill="red" stroke-width="3" d="M 375, 210
+                                                                L 355, 260 " />
+
+        <path stroke="lightgrey" fill="red" stroke-width="3" d="M 375, 210
+                                                                    L 395, 260 " />
+        <circle cx="375" cy="280" r="55" fill="#8fc43e" />
+        <image xlink:href="img/nodejs.jpg" x="325" y="255" height="50px" width="100px" />
+    </svg>
+</body>
+
+</html>
