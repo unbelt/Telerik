@@ -1,6 +1,6 @@
 (function() {
 
-    var scene = Raphael(innerWidth / 3, 150, 400, 300);
+    var scene = Raphael(0, 150, 400, 300);
 
     function drawSpiral(cX, cY, a, b) {
         var center = 'M' + cX + ' ' + cY,

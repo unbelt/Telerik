@@ -1,0 +1,40 @@
+h1 {
+    color: lightblue;
+    text-align: center;
+}
+svg {
+    border: 2px solid lightblue;
+    background: #333;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+svg text {
+    font: 10px Segoe UI Light, sans-serif;
+    fill: #e4e4e4;
+}
+.small {
+    font-size: 15px;
+}
+.start {
+    font-size: 42px;
+}
+.user {
+    font: 10px Segoe UI, sans-serif;
+    font-size: 19px;
+}
+.user-family {
+    font-size: 12px;
+}
+.date {
+    font-size: 52px;
+}
+.mean {
+    font: 34px arial, sans-serif;
+}
+.express {
+    font: 26px arial, sans-serif;
+}
