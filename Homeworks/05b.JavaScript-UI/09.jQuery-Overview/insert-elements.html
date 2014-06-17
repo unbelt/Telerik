@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>jQuery | Insert Elements</title>
+</head>
+<body>
+<h1>jQuery - Insert Elements</h1>
+
+<input type="button" id="before" value="Insert Before">
+<input type="button" id="after" value="Insert After">
+
+<script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+
+<script>
+    (function() {
+        $('#before').click(function () {
+            $('body').prepend('<p>Before</p>');
+        });
+
+        $('#after').click('click', function () {
+            $('body').append('<p>After</p>');
+        });
+    }());
+</script>
+
+</body>
+</html>

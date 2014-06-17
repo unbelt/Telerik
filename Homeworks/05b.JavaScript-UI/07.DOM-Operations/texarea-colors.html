@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Textarea Colors</title>
+</head>
+
+<body>
+    <h1>Textarea Colors</h1>
+        <p>
+            <label>
+                <input type="color" onchange="setColor('backgroundcolour', this.value)"> Background color</label>
+            <br>
+            <label>
+                <input type="color" onchange="setColor('colourtext', this.value)"> Text color</label>
+            <br>
+        </p>
+
+        <textarea name="data" cols="50" rows="10"></textarea>
+
+    <script type="text/javascript">
+    function setColor(style, color) {
+        style == 'colourtext' ?
+            document.getElementsByTagName('textarea')[0].style.color = color :
+            document.getElementsByTagName('textarea')[0].style.backgroundColor = color;
+    }
+    </script>
+
+</body>

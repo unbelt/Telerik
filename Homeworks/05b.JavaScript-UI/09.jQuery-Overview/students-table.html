@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>jQuery | Students Table</title>
+</head>
+<body>
+<h1>jQuery - Students Table</h1>
+
+<div id="student-table"></div>
+
+<script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+
+<script>
+    (function printStudents(students) {
+
+        var $table = $('<table>').attr(
+                {
+                    'cellspacing': 0,
+                    'cellpadding': 5,
+                    'border': 1
+                });
+
+        $table.append($('<th>').text('First name'))
+                .append($('<th>').text('Last name'))
+                .append($('<th>').text('Grade'));
+
+        for (i = 0; i < students.length; i++) {
+            $table.append($('<tr>')
+                    .append($('<td>').text(students[i].firstName))
+                    .append($('<td>').text(students[i].lastName))
+                    .append($('<td>').text(students[i].grade)));
+        }
+
+        $('#student-table').append($table);
+
+    }([
+        {
+            firstName: 'Peter',
+            lastName: 'Ivanov',
+            grade: '3'
+        },
+        {
+            firstName: 'Milena',
+            lastName: 'Grogorova',
+            grade: '6'
+        },
+        {
+            firstName: 'Gergana',
+            lastName: 'Borisova',
+            grade: '12'
+        },
+        {
+            firstName: 'Boyko',
+            lastName: 'Petrov',
+            grade: '7'
+        }
+    ]));
+</script>
+
+</body>
+</html>

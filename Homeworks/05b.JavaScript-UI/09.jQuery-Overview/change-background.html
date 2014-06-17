@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>jQuery | Change Background</title>
+
+</head>
+<body>
+<h1>jQuery - Change Background</h1>
+
+<p><strong>Background color:</strong> <input type="color" id="bg-color" value="#FFFFFF"></p>
+
+<script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+
+<script>
+    (function () {
+        $('#bg-color').change(function () {
+            $('body').css('background-color', $('#bg-color').val())
+        });
+    }());
+</script>
+
+</body>
+</html>

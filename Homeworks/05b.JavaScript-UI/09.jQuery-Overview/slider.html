@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>jQuery Slider</title>
+    <style>
+        .slider-panel {
+            width: 480px;
+            margin: 0 auto;
+        }
+        .slider-panel .previous-slide {
+            float: left;
+            margin-top: 30%;
+        }
+        .slider-panel .next-slide {
+            float: right;
+            margin-top: 30%;
+        }
+        .slider-panel .slide {
+            display: none;
+        }
+        .slider-panel .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<h1>jQuery Slider</h1>
+
+<section class="slider-panel">
+    <button class="previous-slide">&lt;</button>
+    <button class="next-slide">&gt;</button>
+
+    <ul class="slider">
+        <li class="slide show">
+            <img src="http://placekitten.com/400/300" width="400" height="300" alt="cat"/>
+        </li>
+        <li class="slide">
+            <img src="http://placekitten.com/400/299" width="400" height="300" alt="cat"/>
+        </li>
+        <li class="slide">
+            <img src="http://placekitten.com/400/298" width="400" height="299" alt="cat"/>
+        </li>
+        <li class="slide">
+            <img src="http://placekitten.com/400/297" width="400" height="299" alt="cat"/>
+        </li>
+    </ul>
+
+</section>
+
+<script type="text/javascript" src="lib/jquery-1.11.1.min.js"></script>
+
+<script>
+
+    (function () {
+        var $first = $('li:first', 'ul'),
+                $last = $('li:last', 'ul');
+
+        $('.previous-slide').click(function () {
+            var $prev,
+                    $selected = $('.show');
+
+            $prev = $selected.prev('li').length ? $selected.prev('li') : $last;
+            $selected.removeClass('show');
+            $prev.addClass('show');
+        });
+
+        var nextSlide = function () {
+            var $prev,
+                    $selected = $('.show');
+
+            $next = $selected.next('li').length ? $selected.next('li') : $first;
+            $selected.removeClass('show');
+            $next.addClass('show');
+        }
+
+        $('.next-slide').click(nextSlide);
+        setInterval(nextSlide, 5000);
+
+    }());
+</script>
+
+</body>
+</html>
