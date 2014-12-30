@@ -1,6 +1,6 @@
 Telerik Academy Projects
 =======
-![alt tag](https://raw2.github.com/unbelt/Telerik/master/TelerikNinja.gif)
+![alt tag](https://raw.githubusercontent.com/unbelt/Telerik/master/TelerikNinja.gif)
 
 
 ###[C# Part I](https://github.com/unbelt/Telerik/tree/master/Homeworks/01.CSharpPartOne)
