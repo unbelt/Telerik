@@ -3,7 +3,7 @@ Telerik Academy Projects
 ![alt tag](https://raw.githubusercontent.com/unbelt/Telerik/master/TelerikNinja.gif)
 
 
-###[C# Part I](https://github.com/unbelt/Telerik/tree/master/Homeworks/01.CSharpPartOne)
+### [C# Part I](https://github.com/unbelt/Telerik/tree/master/Homeworks/01.CSharpPartOne)
   - [Introduction to Programming](https://github.com/unbelt/Telerik/tree/master/Homeworks/01.CSharpPartOne/01.IntroductionToProgramming)
   - [Primitive Data Types and Variables](https://github.com/unbelt/Telerik/tree/master/Homeworks/01.CSharpPartOne/02.PrimitiveDataTypesAndVariables)
   - [Operators, Expressions and Statements](https://github.com/unbelt/Telerik/tree/master/Homeworks/01.CSharpPartOne/03.OperatorsExpressionsAndStatements)
@@ -11,7 +11,7 @@ Telerik Academy Projects
   - [Conditional Statements](https://github.com/unbelt/Telerik/tree/master/Homeworks/01.CSharpPartOne/05.ConditionalStatements)
   - [Loops](https://github.com/unbelt/Telerik/tree/master/Homeworks/01.CSharpPartOne/06.Loops)
 
-###[C# Part II](https://github.com/unbelt/Telerik/tree/master/Homeworks/02.CSharpPartTwo)
+### [C# Part II](https://github.com/unbelt/Telerik/tree/master/Homeworks/02.CSharpPartTwo)
   - [Arrays](https://github.com/unbelt/Telerik/tree/master/Homeworks/02.CSharpPartTwo/01.Arrays)
   - [Multidimensional Arrays](https://github.com/unbelt/Telerik/tree/master/Homeworks/02.CSharpPartTwo/02.MultidimensionalArrays)
   - [Methods](https://github.com/unbelt/Telerik/tree/master/Homeworks/02.CSharpPartTwo/03.Methods)
@@ -23,7 +23,7 @@ Telerik Academy Projects
   - [Team Project](https://github.com/unbelt/Telerik/tree/master/Teamworks/Asteroids)
   - [Exam Preparation](https://github.com/unbelt/Telerik/tree/master/Homeworks/02.CSharpPartTwo/10.PracticalPreparation)
 
-###[Object-Oriented Programming](https://github.com/unbelt/Telerik/tree/master/Homeworks/03.OOP)
+### [Object-Oriented Programming](https://github.com/unbelt/Telerik/tree/master/Homeworks/03.OOP)
   - [Defining Classes - Part I](https://github.com/unbelt/Telerik/tree/master/Homeworks/03.OOP/01.DefiningClasses-PartOne)
   - [Defining Classes - Part II](https://github.com/unbelt/Telerik/tree/master/Homeworks/03.OOP/02.DefiningClasses-PartTwo)
   - [Extension Methods, Delegates, Lambda, LINQ](https://github.com/unbelt/Telerik/tree/master/Homeworks/03.OOP/03.ExtensionMethods-Delegates-Lambda-LINQ)
@@ -34,20 +34,20 @@ Telerik Academy Projects
   - [Team Project](https://github.com/unbelt/Telerik/tree/master/Teamworks/RentalSystem)
   - [Exam Preparation](https://github.com/unbelt/Telerik/tree/master/Homeworks/03.OOP/Exam-Practice)
 
-###[HTML](https://github.com/unbelt/Telerik/tree/master/Homeworks/04a.HTML)
+### [HTML](https://github.com/unbelt/Telerik/tree/master/Homeworks/04a.HTML)
   - [Introduction to HTML](https://github.com/unbelt/Telerik/tree/master/Homeworks/04a.HTML/01.HTML-Intro)
   - [HTML Tables](https://github.com/unbelt/Telerik/tree/master/Homeworks/04a.HTML/02.HTML-Tables)
   - [HTML Forms & Frames](https://github.com/unbelt/Telerik/tree/master/Homeworks/04a.HTML/03.HTML-Forms)
   - [Semantic Web](https://github.com/unbelt/Telerik/tree/master/Homeworks/04a.HTML/04.HTML-Semantic)
 
-###[CSS](https://github.com/unbelt/Telerik/tree/master/Homeworks/04b.CSS)
+### [CSS](https://github.com/unbelt/Telerik/tree/master/Homeworks/04b.CSS)
   - [CSS Overview](https://github.com/unbelt/Telerik/tree/master/Homeworks/04b.CSS/01.CSS-Overview)
   - [CSS Presentation](https://github.com/unbelt/Telerik/tree/master/Homeworks/04b.CSS/02.CSS-Presentation)
   - [CSS Layout](https://github.com/unbelt/Telerik/tree/master/Homeworks/04b.CSS/03.CSS-Layout)
   - [SASS](https://github.com/unbelt/Telerik/tree/master/Homeworks/04b.CSS/04.CSS-SASS)
   - [LESS](https://github.com/unbelt/Telerik/tree/master/Homeworks/04b.CSS/05.CSS-LESS)
 
-###[JavaScript](https://github.com/unbelt/Telerik/tree/master/Homeworks/05a.JavaScript)
+### [JavaScript](https://github.com/unbelt/Telerik/tree/master/Homeworks/05a.JavaScript)
   - [Data Types and Variables](https://github.com/unbelt/Telerik/tree/master/Homeworks/05a.JavaScript/01.Data-Types-and-Variables)
   - [Operators Expressions](https://github.com/unbelt/Telerik/tree/master/Homeworks/05a.JavaScript/02.Operators-Expressions)
   - [Conditional Statements](https://github.com/unbelt/Telerik/tree/master/Homeworks/05a.JavaScript/03.Conditional-Statements)
